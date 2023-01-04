@@ -21,7 +21,7 @@ RUN zypper install -y git
 # User add
 RUN useradd ${USER_NAME} --badname
 
-# # Setup to use sudo without password
+# Setup to use sudo without password
 RUN echo "${USER_NAME} ALL=NOPASSWD: ALL" | tee /etc/sudoers
 
 ENTRYPOINT tail -f /dev/null
