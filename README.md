@@ -27,12 +27,12 @@ git cloneコマンドで本Repositoryを任意のディレクトリ配下にclon
 <br>
 
 ## BaseOSのReleaseTypeとTag設定
-[.env](./.env)内の`DOCKER_IMAGE_RELEASE_TYPE_AND_TAG`にBaseOSのReleaseTypeとTagを設定する。<br>
+[.env](./.env)内の`BASE_IMAGE_RELEASE_TYPE_AND_TAG`にBaseOSのReleaseTypeとTagを設定する。<br>
 ReleaseType: ${[tumbleweed|leap](https://en.opensuse.org/Portal:Installation)}のいずれかを選択する。<br>
 DockerImageTag: tumbleweedの場合はlatestのみ指定可能。leapの場合は[DockerHub](https://hub.docker.com/r/opensuse/leap/tags)から任意のTagを選択する。
 
 ```
-DOCKER_IMAGE_RELEASE_TYPE_AND_TAG = ${ReleaseType}:${DockerImageTag}
+BASE_IMAGE_RELEASE_TYPE_AND_TAG = ${ReleaseType}:${DockerImageTag}
 ```
 
 <br>
